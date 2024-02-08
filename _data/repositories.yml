@@ -1,12 +1,7 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - MattNolanLab
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - MattNolanLab/grid_cell_analysis
+  - MattNolanLab/SPAD_in_vivo
+  - MattNolanLab/nolan-brainrender
