@@ -110,7 +110,16 @@
       </div>
     </progress>
   {% endif %}
-  {% if site.banner != "blank" %}
+  {% if site.banner %}
         <img src="{{site.banner}}" class="banner" alt="Banner Image">
   {% endif %}
+  <style>
+    .banner {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+    }
+  </style>
 </header>
