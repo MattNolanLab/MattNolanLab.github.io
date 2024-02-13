@@ -9,8 +9,8 @@ profile:
   image: people/harry.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Centre for Discovery Brain Sciences<p>
-    <p>Hugh Robson Building<p>
+    <p>Centre for Discovery Brain Sciences</p>
+    <p>Hugh Robson Building</p>
     <p>15 George Square</p>
     <p>Edinburgh, Scotland</p>
 
