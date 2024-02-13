@@ -6,7 +6,7 @@ title: The Nolan x Sürmeli Lab # the website title (if blank, full name will be
 first_name: Nolan
 middle_name: and
 last_name: Sürmeli
-email: you@example.com
+email: matt.nolan@ed.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   The Nolan x Surmelli Lab website.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
