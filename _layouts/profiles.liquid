@@ -5,9 +5,8 @@ layout: page
   <article>
     {% if page.profiles_pi %}
       <a>
-        <h2 class="category">PI</h2>
+        <h2 class="category">PIs</h2>
       </a>
-      <hr>
       {% for profile in page.profiles_pi %}
         <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
           {% if profile.image %}
@@ -23,6 +22,8 @@ layout: page
           {% if profile.more_info %}
             <div class="more-info">{{ profile.more_info }}</div>
           {% endif %}
+          <br>
+          <br>
         </div>
 
         <div class="clearfix">
@@ -38,9 +39,8 @@ layout: page
 
     {% if page.profiles_postdoc %}
       <a>
-        <h2 class="category">Postdoc</h2>
+        <h2 class="category">Postdocs</h2>
       </a>
-      <hr>
       {% for profile in page.profiles_postdoc %}
         <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
           {% if profile.image %}
@@ -56,6 +56,8 @@ layout: page
           {% if profile.more_info %}
             <div class="more-info">{{ profile.more_info }}</div>
           {% endif %}
+          <br>
+          <br>
         </div>
 
         <div class="clearfix">

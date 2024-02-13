@@ -14,13 +14,13 @@ profiles_pi:
     content: people/template.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>Matt Nolan, PI</p>
+      <p>Matt Nolan</p>
   - align: left
     image: prof_pic.jpg
     content: people/template.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>Gulsen Surmeli, PI</p>
+      <p>Gulsen Surmeli</p>
 
 profiles_postdoc:
   - align: left
@@ -28,5 +28,5 @@ profiles_postdoc:
     content: people/harry.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>Harry Clark, Postdoc</p>
+      <p>Harry Clark</p>
 ---
