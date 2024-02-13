@@ -16,7 +16,7 @@ profiles_pi:
     more_info: >
       <p>Gulsen Sürmeli</p>
   - align: left
-    image: people/matt.jpg
+    image: people/matt.png
     content: people/template.md
     image_circular: false # crops the image to make it circular
     more_info: >
@@ -24,7 +24,7 @@ profiles_pi:
 
 profiles_postdoc:
   - align: left
-    image: people/harry.jpg
+    image: people/harry.png
     content: people/harry.md
     image_circular: false # crops the image to make it circular
     more_info: >
