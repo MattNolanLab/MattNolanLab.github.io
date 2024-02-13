@@ -466,6 +466,8 @@ footer.sticky-bottom {
       .badge {
         color: var(--global-card-bg-color) !important;
         background-color: var(--global-theme-color) !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
       }
     }
   }
