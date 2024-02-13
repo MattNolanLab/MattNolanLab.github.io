@@ -11,7 +11,6 @@ profile:
   more_info: >
     <p>Centre for Discovery Brain Sciences<p>
     <p>Hugh Robson Building<p>
-    <p>Hugh Robson Building<p>
     <p>15 George Square</p>
     <p>Edinburgh, Scotland</p>
 
