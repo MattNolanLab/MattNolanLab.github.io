@@ -11,7 +11,8 @@ def add_field_if_author_in_entry(bibtex_path, author_name, new_field, new_field_
             if new_field not in entry:
                 entry[new_field] = new_field_value
             else:
-                entry[new_field] = entry[new_field] + " x " + new_field_value
+                entry[new_field] = entry[new_field] + \
+                    "\n x \n" + new_field_value
 
     with open(bibtex_path, 'w') as bibtex_file:
         bibtexparser.dump(bib_database, bibtex_file)
