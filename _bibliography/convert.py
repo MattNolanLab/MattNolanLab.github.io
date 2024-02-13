@@ -8,7 +8,7 @@ def add_field_if_author_in_entry(bibtex_path, pis):
         bib_database = bibtexparser.load(bibtex_file)
     for entry in bib_database.entries:
         if 'author' in entry:
-            entry["abbr"] = ", ".join(
+            entry["abbr"] = " x ".join(
                 [pi_label for pi, pi_label in pis.items() if pi in entry['author']])
 
     writer = BibTexWriter()
