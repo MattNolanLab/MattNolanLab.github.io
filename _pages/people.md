@@ -6,20 +6,27 @@ description: members of the lab or group
 nav: true
 nav_order: 7
 
-profiles:
+profiles_pi:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
   - align: left
     image: prof_pic.jpg
-    content: about_einstein.md
+    content: people/template.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>Albert Einstein, The man</p>
+      <p>Matt Nolan, PI</p>
   - align: left
     image: prof_pic.jpg
-    content: about_harry.md
+    content: people/template.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>Dr Harry Clark, Postdoc</p>
+      <p>Gulsen Surmeli, PI</p>
 
+profiles_postdoc:
+  - align: left
+    image: prof_pic.jpg
+    content: people/harry.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>Harry Clark, Postdoc</p>
 ---
