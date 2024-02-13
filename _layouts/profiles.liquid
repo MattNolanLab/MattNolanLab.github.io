@@ -4,10 +4,11 @@ layout: page
 <div class="post">
   <article>
     {% if page.profiles_pi %}
+      <a>
+        <h2 class="category">PI</h2>
+      </a>
+      <hr>
       {% for profile in page.profiles_pi %}
-        <a>
-          <h2 class="category">PI</h2>
-        </a>
         <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
           {% if profile.image %}
             {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
@@ -36,10 +37,11 @@ layout: page
     {% endif %}
 
     {% if page.profiles_postdoc %}
+      <a>
+        <h2 class="category">Postdoc</h2>
+      </a>
+      <hr>
       {% for profile in page.profiles_postdoc %}
-        <a>
-          <h2 class="category">Postdoc</h2>
-        </a>
         <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
           {% if profile.image %}
             {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
