@@ -1,18 +1,19 @@
 
 import bibtexparser
+from bibtexparser.bwriter import BibTexWriter
 
 
-def add_field_if_author_in_entry(bibtex_path, author_name, new_field, new_field_value):
+def add_field_if_author_in_entry(bibtex_path, pis):
     with open(bibtex_path) as bibtex_file:
         bib_database = bibtexparser.load(bibtex_file)
-
     for entry in bib_database.entries:
-        if 'author' in entry and author_name in entry['author']:
-            if new_field not in entry:
-                entry[new_field] = new_field_value
-            else:
-                entry[new_field] = entry[new_field] + \
-                    "\n x \n" + new_field_value
+        if 'author' in entry:
+            entry["abbr"] = ", ".join(
+                [pi_label for pi, pi_label in pis.items() if pi in entry['author']])
+
+    writer = BibTexWriter()
+    writer.contents = ['entries']
+    writer.indent = '    '
 
     with open(bibtex_path, 'w') as bibtex_file:
         bibtexparser.dump(bib_database, bibtex_file)
@@ -20,6 +21,4 @@ def add_field_if_author_in_entry(bibtex_path, author_name, new_field, new_field_
 
 # Usage
 add_field_if_author_in_entry(
-    'papers.bib', 'Nolan', 'abbr', 'NOLAN')
-add_field_if_author_in_entry(
-    'papers.bib', 'Gulsen', 'abbr', 'SÜRMELI')
+    'papers.bib', {"Matt": "NOLAN", "Gulsen": "SÜRMELI"})
