@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositories/
-title: Repositories
+title: repositories
 description: An overview of the lab's published code and tools.
 nav: true
 nav_order: 4
