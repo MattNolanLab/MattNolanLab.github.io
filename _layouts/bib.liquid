@@ -2,7 +2,6 @@
 ---
 <div class="row">
   {% if site.enable_publication_thumbnails %}
-    <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
     <div class="col-sm-2 {% if entry.preview %}preview{% else %}
         {% if entry.abbr is iterable %}
             {% for abbr in entry.abbr %}
