@@ -11,6 +11,7 @@ window.onload = function() {
       type: Phaser.AUTO,
       parent: "gameCanvas1",
       width: parentElement.offsetWidth,
+        height: parentElement.offsetheight * 0.75,
       backgroundColor: '#000001',
       // scene: {
       //   preload: preload,
