@@ -11,7 +11,6 @@ window.onload = function() {
       type: Phaser.AUTO,
       parent: "gameCanvas1",
       width: parentElement.offsetWidth,
-      height: parentElement.offsetHeight,
       backgroundColor: '#000001',
       // scene: {
       //   preload: preload,
@@ -24,9 +23,9 @@ window.onload = function() {
           debug: false,
         }
       },
-      //scale: {
-      //  mode: Phaser.Scale.RESIZE,
-      //}
+      scale: {
+        mode: Phaser.Scale.WIDTH_CONTROLS_HEIGHT,
+      }
     }
 
   const game = new Phaser.Game(config);
