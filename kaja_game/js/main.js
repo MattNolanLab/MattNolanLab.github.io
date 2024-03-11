@@ -20,7 +20,7 @@ const config = {
     }
   },
   scale: {
-    mode: Phaser.Scale.FIT,
+    mode: Phaser.Scale.RESIZE,
   }
 }
 
