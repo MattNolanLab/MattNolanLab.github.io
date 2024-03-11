@@ -4,29 +4,35 @@ import nightScene from "./nightScene.js"
 import endScene from "./endScene.js"
 
 
-const config = {
-  type: Phaser.AUTO,
-  parent: "gameCanvas1",
-  backgroundColor: '#000001',
-  // scene: {
-  //   preload: preload,
-  //   create: create,
-  //   update: update
-  // },
-  physics: {
-    default: 'arcade',
-    arcade: {
-      debug: false,
-    }
-  },
-  scale: {
-    mode: Phaser.Scale.RESIZE,
-  }
-}
+window.onload = function() {
+    let parentElement = document.getElementById('gameCanvas1');
 
-const game = new Phaser.Game(config);
-game.scene.add('dayScene', dayScene);
-game.scene.add('titleScene', titleScene);
-game.scene.add('nightScene', nightScene);
-game.scene.add('endScene', endScene);
-game.scene.start('titleScene');
+    const config = {
+      type: Phaser.AUTO,
+      parent: "gameCanvas1",
+      width: parentElement.offsetWidth,
+      height: parentElement.offsetHeight,
+      backgroundColor: '#000001',
+      // scene: {
+      //   preload: preload,
+      //   create: create,
+      //   update: update
+      // },
+      physics: {
+        default: 'arcade',
+        arcade: {
+          debug: false,
+        }
+      },
+      scale: {
+        mode: Phaser.Scale.RESIZE,
+      }
+    }
+
+  const game = new Phaser.Game(config);
+  game.scene.add('dayScene', dayScene);
+  game.scene.add('titleScene', titleScene);
+  game.scene.add('nightScene', nightScene);
+  game.scene.add('endScene', endScene);
+  game.scene.start('titleScene');
+}
