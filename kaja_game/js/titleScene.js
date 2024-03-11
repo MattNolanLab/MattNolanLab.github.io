@@ -12,14 +12,19 @@ class titleScene extends Phaser.Scene {
   }
   create (data){
     this.titleScenebackgroundimage = this.add.sprite(0,0, 'titleScenebackgroundimage').setOrigin(0,0);;
-    this.startButton = this.add.sprite(600,550, 'startButton').setScale(.8).setInteractive({useHandCursor:true});
-    this.startButton.on('pointerdown', () => this.clickButton())
+    this.resizeBackgroundImage(this.scale.gameSize);
+    this.startButton = this.add.sprite(this.cameras.main.width / 2, this.cameras.main.height / 2, 'startButton').setScale(.8).setInteractive({useHandCursor:true});
+    this.startButton.on('pointerdown', () => this.scene.start('dayScene'))
 
+    this.scale.on('resize', this.resizeBackgroundImage, this);
   }
-  update(time, delta){
+
+  resizeBackgroundImage(gameSize) {
+    let width = gameSize.width;
+    let height = gameSize.height;
+
+    // Scale the image based on the size of the game
+    this.titleScenebackgroundimage.setScale(width / this.titleScenebackgroundimage.width, height / this.titleScenebackgroundimage.height);
     }
-  clickButton (){
-    this.scene.start('dayScene')
-  }
 }
 export default titleScene
