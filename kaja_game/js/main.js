@@ -24,9 +24,9 @@ window.onload = function() {
           debug: false,
         }
       },
-      scale: {
-        mode: Phaser.Scale.RESIZE,
-      }
+      //scale: {
+      //  mode: Phaser.Scale.RESIZE,
+      //}
     }
 
   const game = new Phaser.Game(config);
