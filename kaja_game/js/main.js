@@ -24,7 +24,7 @@ window.onload = function() {
         }
       },
       scale: {
-        mode: Phaser.Scale.RESIZE,
+        mode: Phaser.Scale.WIDTH_CONTROLS_HEIGHT,
       }
     }
 
