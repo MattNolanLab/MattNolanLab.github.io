@@ -3,11 +3,13 @@ import titleScene from "./titleScene.js"
 import nightScene from "./nightScene.js"
 import endScene from "./endScene.js"
 
+let parentElement = document.getElementById('gameCanvas1');
+
 const config = {
   type: Phaser.AUTO,
   parent: "gameCanvas1",
-  width: 1200,
-  height: 900,
+  width: parentElement.offsetWidth,
+  height: parentElement.offsetHeight,
   backgroundColor: '#000001',
   // scene: {
   //   preload: preload,
