@@ -20,8 +20,14 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+We aim to understand the cellular and molecular basis for computations that underlie episodic memory. We address this through four themes:
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+*Circuit organisation.* We are investigating the local and long-range organisation of circuits in the entorhinal cortex. We want to understand how molecular level organisation within the entorhinal cortex leads to architectural principles that are critical for memory storage and retrieval.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+*Circuit computations.* We are using high density neural recordings and neural network models to investigate how entorhinal cortex circuits implement computations important for spatial memory.
+
+*Technology development.* We are collaborating with engineers to develop extremely high frame rate cameras for imaging neural activity, and with informaticians and statisticians to develop new tools for analysis of neural activity and connectivity.
+
+*Circuit disorders.* Many disorders of the brain appear to result from circuit level deficits. We believe that understanding the fundamental principles for neural circuit computation will be essential for understanding and treating disorders. We are addressing this by focusing on models of autism spectrum disorders and Alzheimer's disease.
+
+
