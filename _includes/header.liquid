@@ -1,12 +1,11 @@
 <header>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
-    {% if site.banner %}
+  {% if site.banner %}
       <div class="container">
           <img src="/{{site.banner}}" class="banner" alt="Banner Image" style="width: 100%; height: auto;">
       </div>
-    {% endif %}
-    <div class="container">
+  {% endif %}
+  <nav id="navbar" class="navbar container navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
       {% if site.enable_navbar_social %}
         <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>

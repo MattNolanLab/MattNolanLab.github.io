@@ -9,7 +9,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-We aim to understand the cellular and molecular basis for computations that underlie episodic memory. We address this through four themes:
+We aim to understand the cellular and molecular basis for computations that underlie episodic memory.  
+We address this through four themes:
 
 *Circuit organisation.* We are investigating the local and long-range organisation of circuits in the entorhinal cortex. We want to understand how molecular level organisation within the entorhinal cortex leads to architectural principles that are critical for memory storage and retrieval.
 
