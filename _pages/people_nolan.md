@@ -17,15 +17,23 @@ profiles_postdoc:
   - align: left
     image: people/harry.png
     content: people/nolan/harry.md
-    image_circular: false # crops the image to make it circular
+    image_circular: false
     more_info: >
       <p>Harry Clark</p>
+
+profiles_soft:
+  - align: left
+    image: people/chris.jpeg
+    content: people/nolan/chris.md
+    image_circular: false
+    more_info: >
+      <p>Chris Halcrow</p>
 
 profiles_phd:
   - align: left
     image: people/wolf.jpg
     content: people/nolan/wolf.md
-    image_circular: false # crops the image to make it circular
+    image_circular: false
     more_info: >
       <p>Wolf De Wulf</p>
       <a href="http://www.wolfdewulf.eu">www.wolfdewulf.eu</a>
