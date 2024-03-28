@@ -1,7 +1,11 @@
 <header>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
-    <div class="container">
+  {% if site.banner %}
+      <div class="container">
+          <img src="/{{site.banner}}" class="banner" alt="Banner Image" style="width: 100%; height: auto;">
+      </div>
+  {% endif %}
+  <nav id="navbar" class="navbar container navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
       {% if site.enable_navbar_social %}
         <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>
@@ -110,18 +114,4 @@
       </div>
     </progress>
   {% endif %}
-  {% if site.banner %}
-    <div class="post">
-        <img src="/{{site.banner}}" class="banner" alt="Banner Image">
-    </div>
-  {% endif %}
-  <style>
-    .banner {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        height: auto;
-    }
-  </style>
 </header>

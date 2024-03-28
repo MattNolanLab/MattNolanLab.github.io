@@ -1,30 +1,22 @@
 ---
 layout: profiles
-permalink: /people/
-title: people
+permalink: /people-surmeli/
+title: Sürmeli group
 nav: true
-nav_order: 5
+nav_order: 7
 
 profiles_pi:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
   - align: left
     image: people/gulsen.jpg
     content: people/template.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>Gulsen Sürmeli</p>
-  - align: left
-    image: people/matt.jpg
-    content: people/template.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>Matt Nolan</p>
 
 profiles_postdoc:
   - align: left
     image: people/harry.png
-    content: people/harry.md
+    content: people/nolan/harry.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>Harry Clark</p>

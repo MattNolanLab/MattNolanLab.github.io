@@ -2,9 +2,9 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: The Nolan x Sürmeli Lab # the website title (if blank, full name will be used instead)
+title: "Nolan & Sürmeli Lab" # the website title (if blank, full name will be used instead)
 first_name: Nolan
-middle_name: and
+middle_name: "&"
 last_name: Sürmeli
 email: matt.nolan@ed.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -42,9 +42,9 @@ rss_icon: false
 # Layout
 # -----------------------------------------------------------------------------
 
-navbar_fixed: true
+navbar_fixed: false
 footer_fixed: false
-banner: assets/img/banner.jpg # path to the banner image
+banner: assets/img/banner.png # path to the banner image
 
 # Dimensions
 max_width: 800px

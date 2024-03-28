@@ -930,6 +930,16 @@ progress::-moz-progress-bar {
   display: block;
 }
 
+.banner-container {
+  max-width: $max-content-width;
+  background-color: transparent;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  height: 5px;
+  display: block;
+}
+
 .progress-bar {
   background-color: var(--global-theme-color);
   width: 0%;
