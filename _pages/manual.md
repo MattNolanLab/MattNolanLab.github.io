@@ -1,8 +1,7 @@
 ---
 layout: page
 permalink: /manual/
-title: values
-description: the lab's research values
+title: manual
 nav: true
 nav_order: 3
 ---
@@ -61,7 +60,11 @@ To achive these goals we expect you to:
 #### Masters and undergraduate students
 We strongly encourage you to take advantage of your time in the lab to learn from other people about what they are doing. You will usually work with a postdoc or PhD student on a specific question as part of a larger project. This person will provide you with lab training needed to address your project goals
 
-We expect you to take excellent notes on your training and to follow these when carrying out experiments. You very likely will still encounter unexpected challenges. We suggest problem solving in the following order: 1, review your notes and records to check if there are any issues you're overlooked; 2. consult with the person supervising you. You should not change or modify protocols without consulting with the person supervising you; this will very likely end up wasting your time and lab resources.
+We expect you to take excellent notes on your training and to follow these when carrying out experiments. 
+You very likely will still encounter unexpected challenges. 
+We suggest problem solving in the following order: 
+1. Review your notes and records to check if there are any issues you've overlooked. 
+2. Consult with the person supervising you. You should not change or modify protocols without consulting with the person supervising you; this will very likely end up wasting your time and lab resources.
 
 You will meet regularly with Gülşen and / or Matt to discuss your work and plans.
 
@@ -76,7 +79,7 @@ We aim to share all manuscripts as preprints before submitting to a journal. Whi
 
 
 #### Data and code
-We aim to share all ocde and data. For papers on which Matt is senior author, code is found [here](https://github.com/MattNolanLab) and data [here](https://datashare.ed.ac.uk/handle/10283/777). For papers on which Gülşen is senior author, data is found [here](https://datashare.ed.ac.uk/handle/10283/4369).
+We aim to share all data and code, see [data & code](/data-and-code).
 
 #### Authorship
 We support use of the CRedIT taxonomy for documenting author contributions to research papers.Qualificaton for authorship requires meeting at least one of the CRedIT criteria. In determining position on authorship lists we follow the convention that the first author(s) have usually carried out most of the key experiments and provide strong intellectual drive, the senior authors have provided supervision, leadership and direction, and intermediate authors have contributed consistent with the CRedIT criteria. When multiple people have made substantial contributions of key experiments and ideas to a project, and where publishing these contributions as a single study is likely to lead to a more impactful paper, then the major contributors will share joing or equal contributing first author status. If at any stage of a project you would like to discuss authorship issues then please mention this to Matt or Gülşen. We aim that all authorship decisions are made collaboratively and with the agreement of all authors. In the even of unresolvable differences then Matt or Gülşen will have responsibility for the final decision.
