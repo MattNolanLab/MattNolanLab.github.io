@@ -2,7 +2,11 @@
   <!-- Nav Bar -->
   {% if site.banner %}
       <div class="container">
-          <img src="/{{site.banner}}" class="banner" alt="Banner Image" style="width: 100%; height: auto;">
+        <div style="position: relative;">
+            <img src="/{{site.banner}}" class="banner" alt="Banner Image" style="width: 100%; height: auto;">
+            <p style="position: absolute; top: 60%; left: 54%; color: white; white-space: no-wrap; font-weight: bold; font-size: 200%;">{{site.banner_title_right}}</p>
+            <p style="position: absolute; top: 0%; left: 1.5%; color: white; white-space: no-wrap; font-weight: bold; font-size: 200%;">{{site.banner_title_left}}</p>
+        </div>
       </div>
   {% endif %}
   <nav id="navbar" class="navbar container navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">

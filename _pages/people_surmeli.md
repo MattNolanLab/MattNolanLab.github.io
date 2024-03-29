@@ -1,6 +1,6 @@
 ---
 layout: profiles
-permalink: /people-surmeli/
+permalink: /surmeli-group/
 title: Sürmeli group
 nav: true
 nav_order: 7
@@ -11,7 +11,7 @@ profiles_pi:
     content: people/template.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>Gulsen Sürmeli</p>
+      <p>Gülşen Sürmeli</p>
 
 profiles_postdoc:
   - align: left

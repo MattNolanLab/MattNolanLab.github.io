@@ -7,7 +7,7 @@ nav: true
 nav_order: 5
 ---
 
-For papers on which Matt is senior author, code can be found [here](https://github.com/MattNolanLab) and data [here](https://datashare.ed.ac.uk/handle/10283/777). 
+For papers on which Matt is senior author, code can be found [here](https://github.com/MattNolanLab) and data [here](https://datashare.ed.ac.uk/handle/10283/777).   
 For papers on which Gülşen is senior author, data can be found [here](https://datashare.ed.ac.uk/handle/10283/4369).
 
 ## GitHub users

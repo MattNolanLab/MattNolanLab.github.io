@@ -1,8 +1,11 @@
 "NOLAN":
   color: "#d63230"
+  url: /nolan-group
 
 "SÜRMELI":
   color: "#f39237"
+  url: /surmeli-group
 
 "NOLAN<br>x<br>SÜRMELI":
   color: "#1c77c3"
+  url: /

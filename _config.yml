@@ -45,6 +45,8 @@ rss_icon: false
 navbar_fixed: false
 footer_fixed: false
 banner: assets/img/banner.png # path to the banner image
+banner_title_left: "Systems and Circuits lab"
+banner_title_right: "Nolan & Sürmeli groups"
 
 # Dimensions
 max_width: 800px
@@ -279,8 +281,8 @@ display_categories: ["Nolan lab", "Sürmeli lab"] # these categories will be dis
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Nolan]
+  first_name: [Matthew]
 
   style: apa
   locale: en
@@ -310,11 +312,11 @@ enable_publication_badges:
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
-  [abbr, abstract, altmetric, arxiv, bibtex_show, blog, code, html, pdf, poster, preview, selected, slides, supp, video, website]
+  [doi, abbr, abstract, altmetric, arxiv, bibtex_show, blog, code, html, pdf, poster, preview, selected, slides, supp, video, website]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
 max_author_limit: 3 # leave blank to always show all authors
-more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
+more_authors_animation_delay: 5 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
 enable_publication_thumbnails: true

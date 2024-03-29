@@ -1,6 +1,6 @@
 ---
 layout: profiles
-permalink: /people-nolan/
+permalink: /nolan-group/
 title: Nolan group
 nav: true
 nav_order: 6

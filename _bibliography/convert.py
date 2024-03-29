@@ -11,6 +11,12 @@ def add_field_if_author_in_entry(bibtex_path, pis):
             entry["abbr"] = "<br>x<br>".join(
                 [pi_label for pi, pi_label in pis.items() if pi in entry['author']])
 
+        if 'doi' in entry:
+            if entry['doi'].startswith('http'):
+                entry['website'] = entry['doi']
+            else:
+                entry['website'] = f"https://doi.org/{entry['doi']}"
+
     writer = BibTexWriter()
     writer.contents = ['entries']
     writer.indent = '    '
@@ -21,4 +27,4 @@ def add_field_if_author_in_entry(bibtex_path, pis):
 
 # Usage
 add_field_if_author_in_entry(
-    'papers.bib', {"Matt": "NOLAN", "Gulsen": "SÜRMELI"})
+    'papers.bib', {"Matt": "NOLAN", "Gulsen": "SÜRMELI", "Gülşen": "SÜRMELI"})
