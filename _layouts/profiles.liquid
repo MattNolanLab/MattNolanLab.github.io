@@ -94,7 +94,7 @@ layout: page
           <br>
         </div>
 
-        <div class="clearfix">
+        <div class="clearfix" style="padding-bottom: 20px;">
           {% if profile.content %}
             {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
             {{ profile_content | markdownify }}
@@ -128,7 +128,7 @@ layout: page
           <br>
         </div>
 
-        <div class="clearfix">
+        <div class="clearfix mobile-padding" style="padding-bottom: 40px;">
           {% if profile.content %}
             {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
             {{ profile_content | markdownify }}
@@ -140,3 +140,11 @@ layout: page
     {% endif %}
   </article>
 </div>
+
+<style>
+@media screen and (max-width: 600px) {
+  .mobile-padding {
+    padding-bottom: 40px;
+  }
+}
+</style>

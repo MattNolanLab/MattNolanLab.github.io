@@ -1,7 +1,7 @@
 ---
 layout: profiles
-permalink: /nolan-group/
-title: Nolan group
+permalink: /nolan-lab/
+title: Nolan lab
 nav: true
 nav_order: 6
 

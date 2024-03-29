@@ -1,7 +1,7 @@
 ---
 layout: profiles
-permalink: /surmeli-group/
-title: Sürmeli group
+permalink: /surmeli-lab/
+title: Sürmeli lab
 nav: true
 nav_order: 7
 
