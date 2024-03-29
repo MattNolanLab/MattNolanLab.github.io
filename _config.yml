@@ -8,7 +8,14 @@ middle_name: "&"
 last_name: Sürmeli
 email: matt.nolan@ed.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  The Nolan x Surmelli Lab website.
+  The Nolan & Surmelli Lab website.
+footer_text: |
+    <a href="https://discovery-brain-sciences.ed.ac.uk/">
+      <img src="/assets/img/cdbs.png" style="min-width: 20%; max-width: 50%" alt="Centre for Discovery Brain Sciences logo">
+    </a>
+    <a href="https://sidb.org.uk/">
+      <img src="/assets/img/SIDB.gif" alt="Simons Initiative for the Developing Brain logo" style="min-width: 20%; max-width: 60%">
+    </a>
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧠 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)

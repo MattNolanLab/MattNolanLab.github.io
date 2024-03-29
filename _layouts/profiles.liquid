@@ -90,11 +90,9 @@ layout: page
           {% if profile.more_info %}
             <div class="more-info">{{ profile.more_info }}</div>
           {% endif %}
-          <br>
-          <br>
         </div>
 
-        <div class="clearfix" style="padding-bottom: 20px;">
+        <div class="clearfix">
           {% if profile.content %}
             {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
             {{ profile_content | markdownify }}
@@ -109,8 +107,9 @@ layout: page
       <a>
         <h2 class="category">PhD Students</h2>
       </a>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
       {% for profile in page.profiles_phd %}
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
+        <div class="profile" style="flex: 1 0 200px; margin: 10px 10px 20px 10px;">
           {% if profile.image %}
             {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
             {% if profile.image_circular %}
@@ -124,27 +123,9 @@ layout: page
           {% if profile.more_info %}
             <div class="more-info">{{ profile.more_info }}</div>
           {% endif %}
-          <br>
-          <br>
-        </div>
-
-        <div class="clearfix mobile-padding" style="padding-bottom: 40px;">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
         </div>
       {% endfor %}
+    </div>
     {% endif %}
   </article>
 </div>
-
-<style>
-@media screen and (max-width: 600px) {
-  .mobile-padding {
-    padding-bottom: 40px;
-  }
-}
-</style>

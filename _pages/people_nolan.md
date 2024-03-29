@@ -32,13 +32,13 @@ profiles_soft:
 profiles_phd:
   - align: left
     image: people/zita.png
-    content: people/nolan/zita.md
+    #content: people/nolan/zita.md
     image_circular: false
     more_info: >
       <p>Zita Francsics</p>
   - align: left
     image: people/wolf.jpg
-    content: people/nolan/wolf.md
+    #content: people/nolan/wolf.md
     image_circular: false
     more_info: >
       <p>Wolf De Wulf</p>
