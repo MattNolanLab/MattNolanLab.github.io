@@ -7,13 +7,13 @@ nav: true
 nav_order: 3
 ---
 
-This document is inspired by Mariam Aly’s excellent [article](https://www.nature.com/articles/d41586-018-06167-w) about lab manuals and by her lab’s [manual](https://www.alylab.org/). Detailed information including mailing lists, calendars, contact numbers, and protocols are on our internal [wiki](https://www.wiki.ed.ac.uk/pages/viewpage.action?pageId=376674941).
+This document is inspired by Mariam Aly’s excellent [article](https://www.nature.com/articles/d41586-018-06167-w) about lab manuals and by her lab’s [manual](https://www.alylab.org/). This page contains information about the lab [goals](#goals), [expectations and responsibilities](#er) and [publication policies](#pub). Information about mailing lists, calendars, contact numbers, computing resources, animal management and experimental protocols is on our internal [wiki](https://www.wiki.ed.ac.uk/pages/viewpage.action?pageId=376674941).
 
-### Goals
+### Goals {#goals}
 We aim to do the best science we can with the resources available to us. We are committed to supporting creative and rigorous science that aims to address important questions. We expect everyone in our labs to share this commitment. We also do our best to make the process fun.
 
 
-### Expectations and responsibilities
+### Expectations and responsibilities {#er}
 With help from current and previous lab members we’ve put together below principles and general expectations for everyone, for ourselves, for postdocs and PhD students, for lab staff and for undergraduates. 
 
 #### Everyone
@@ -69,7 +69,7 @@ You should read literature around your project and more generally.
 
 
 
-### Publication policies
+### Publication policies {#pub}
 
 #### Preprints and journals
 We aim to share all manuscripts as preprints before submitting to a journal. Which journals to submit to is a joint decision between first and lead author(s). Our preference is to submit to non-profit journals with a strong commitment to open science (e.g. eLife). We recognise that scientific job and funding evaluation is far from perfect and will submit elsewhere if the first author prefers.
