@@ -1,12 +1,10 @@
 <header>
   <!-- Nav Bar -->
   {% if site.banner %}
-      <div class="container">
-        <div style="position: relative;">
+      <div class="container" style="position: relative; width: fit-content; padding: 0;">
             <img src="/{{site.banner}}" class="banner" alt="Banner Image" style="width: 100%; height: auto;">
-            <p style="line-height: 0.9; position: absolute; top: 70%; left: 54%; color: white; white-space: no-wrap; font-weight: bold; font-size: 200%;">{{site.banner_title_right}}</p>
-            <p style="line-height: 0.9; position: absolute; top: 29%; left: 1.5%; color: white; white-space: no-wrap; font-weight: bold; font-size: 250%;">{{site.banner_title_left}}</p>
-        </div>
+            <p class="banner-text" style="margin: 0; line-height: 0.9; position: absolute; top: 29%; left: 95%; color: white; white-space: no-wrap; font-weight: bold;">{{site.banner_title_right}}</p>
+            <p class="banner-text" style="margin: 0; line-height: 0.9; position: absolute; bottom: 5%; left: 1.2%; color: white; white-space: no-wrap; font-weight: bold;">{{site.banner_title_left}}</p>
       </div>
   {% endif %}
   <nav id="navbar" class="navbar container navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
@@ -118,4 +116,20 @@
       </div>
     </progress>
   {% endif %}
+  <script>
+window.addEventListener('resize', resizeFont);
+
+function resizeFont() {
+  var parentWidth = document.querySelector('.container').offsetWidth;
+  var fontSize = parentWidth * 0.05; // Adjust the multiplier as needed
+  var textElements = document.querySelectorAll('.banner-text');
+
+  textElements.forEach(function(element) {
+    element.style.fontSize = fontSize + 'px';
+  });
+}
+
+// Call resizeFont on page load
+resizeFont();
+</script>
 </header>
