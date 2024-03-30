@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /manual/
-title: manual
+permalink: /lab-manual/
+title: lab manual
 nav: true
 nav_order: 3
 ---

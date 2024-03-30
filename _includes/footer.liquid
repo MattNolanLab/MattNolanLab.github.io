@@ -14,21 +14,31 @@
     </div>
   </footer>
 {% else %}
-  <footer class="sticky-bottom mt-5" role="contentinfo">
-    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-      <div style="min-width: 30%">
-        &copy; Copyright {{ site.time | date: '%Y' }}
+<footer class="sticky-bottom mt-5" role="contentinfo">
+    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+        <div style="flex: 0 0 30%;">
+            &copy; Copyright {{ site.time | date: '%Y' }}
             {{ site.first_name }}
             {{ site.middle_name }}
             {{ site.last_name }}.
         </div>
-      {{ site.footer_text }}
-      {% if site.impressum_path %}
-        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-      {% endif %}
-      {% if site.last_updated %}
-        Last updated: {{ 'now' | date: '%B %d, %Y' }}.
-      {% endif %}
+        <div style="flex: 1; display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center;">
+            <div style="flex: 1; margin: 0 20px;">
+                <a href="https://www.ed.ac.uk/">
+                  <img src="/assets/img/uoe.png" alt="University of Edinburgh logo" style="width: 100%;">
+                </a>
+            </div>
+            <div style="flex: 1; margin: 0 20px;">
+                <a href="https://discovery-brain-sciences.ed.ac.uk/">
+                  <img src="/assets/img/cdbs.png" alt="Centre for Discovery Brain Sciences logo" style="width: 100%;">
+                </a>
+            </div>
+            <div style="flex: 1; margin: 0 20px;">
+                <a href="https://sidb.org.uk/">
+                  <img src="/assets/img/SIDB.gif" alt="Simons Initiative for the Developing Brain logo" style="width: 100%;">
+                </a>
+            </div>
+        </div>
     </div>
-  </footer>
+</footer>
 {% endif %}

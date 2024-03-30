@@ -5,7 +5,7 @@ layout: page
   <article>
     {% if page.profiles_pi %}
       <a>
-        <h2 class="category">PIs</h2>
+        <h2 class="category">PI</h2>
       </a>
       {% for profile in page.profiles_pi %}
         <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
@@ -19,10 +19,15 @@ layout: page
             {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
             {% include figure.liquid path = profile_image_path class = profile_image_class sizes = sizes alt = profile.image %}
           {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
+          {% if profile.name %}
+            <div class="more-info">{{ profile.name }}</div>
+            {% if profile.email %}
+                <div class="more-info"><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></div>
+            {% endif %}
           {% endif %}
-          <br>
+          {% if profile.more_info %}
+            <p style="margin-top: 0;">{{ profile.more_info }}<p>
+          {% endif %}
           <br>
         </div>
 
@@ -41,91 +46,104 @@ layout: page
       <a>
         <h2 class="category">Postdocs</h2>
       </a>
-      {% for profile in page.profiles_postdoc %}
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+    <div style="display: flex; flex-wrap: wrap; justify-content: start;">
+        {% for profile in page.profiles_postdoc %}
+          <div class="profile" style="flex: 1 0 300px; margin: 10px; max-width: 300px;">
+            {% if profile.image %}
+              {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+              {% if profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+              {% endif %}
+              {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+              {% include figure.liquid path = profile_image_path class = profile_image_class sizes = sizes alt = profile.image %}
             {% endif %}
-            {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid path = profile_image_path class = profile_image_class sizes = sizes alt = profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
-          <br>
-          <br>
-        </div>
-
-        <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
-        </div>
-      {% endfor %}
+            {% if profile.name %}
+              <div class="more-info">{{ profile.name }}</div>
+              {% if profile.email %}
+                  <div class="more-info"><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></div>
+              {% endif %}
+              {% if profile.website %}
+                  <p><a href="http://{{ profile.website }}">{{ profile.website }}</a></p>
+              {% endif %}
+              {% if profile.more_info %}
+                <p style="margin-top: 0;">{{ profile.more_info }}<p>
+              {% endif %}
+            {% endif %}
+            <br>
+          </div>
+        {% endfor %}
+    </div>
     {% endif %}
     
     {% if page.profiles_soft %}
       <a>
         <h2 class="category">Research Software Engineers</h2>
       </a>
-      {% for profile in page.profiles_soft %}
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+    <div style="display: flex; flex-wrap: wrap; justify-content: start;">
+        {% for profile in page.profiles_soft %}
+          <div class="profile" style="flex: 1 0 300px; margin: 10px; max-width: 300px;">
+            {% if profile.image %}
+              {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+              {% if profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+              {% endif %}
+              {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+              {% include figure.liquid path = profile_image_path class = profile_image_class sizes = sizes alt = profile.image %}
             {% endif %}
-            {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid path = profile_image_path class = profile_image_class sizes = sizes alt = profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
-        </div>
-
-        <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
-        </div>
-      {% endfor %}
+            {% if profile.name %}
+              <div class="more-info">{{ profile.name }}</div>
+              {% if profile.email %}
+                  <div class="more-info"><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></div>
+              {% endif %}
+              {% if profile.website %}
+                  <p><a href="http://{{ profile.website }}">{{ profile.website }}</a></p>
+              {% endif %}
+              {% if profile.more_info %}
+                <p style="margin-top: 0;">{{ profile.more_info }}<p>
+              {% endif %}
+            {% endif %}
+            <br>
+          </div>
+        {% endfor %}
+    </div>
     {% endif %}
     
     {% if page.profiles_phd %}
       <a>
         <h2 class="category">PhD Students</h2>
       </a>
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-      {% for profile in page.profiles_phd %}
-        <div class="profile" style="flex: 1 0 200px; margin: 10px 10px 20px 10px;">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+    <div style="display: flex; flex-wrap: wrap; justify-content: start;">
+        {% for profile in page.profiles_phd %}
+          <div class="profile" style="flex: 1 0 300px; margin: 10px; max-width: 300px;">
+            {% if profile.image %}
+              {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+              {% if profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+              {% endif %}
+              {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+              {% include figure.liquid path = profile_image_path class = profile_image_class sizes = sizes alt = profile.image %}
             {% endif %}
-            {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid path = profile_image_path class = profile_image_class sizes = sizes alt = profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
-        </div>
-      {% endfor %}
+            {% if profile.name %}
+              <div class="more-info">{{ profile.name }}</div>
+              {% if profile.email %}
+                  <div class="more-info"><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></div>
+              {% endif %}
+              {% if profile.website %}
+                  <p><a href="http://{{ profile.website }}">{{ profile.website }}</a></p>
+              {% endif %}
+              {% if profile.more_info %}
+                <p style="margin-top: 0;">{{ profile.more_info }}<p>
+              {% endif %}
+            {% endif %}
+            <br>
+          </div>
+        {% endfor %}
     </div>
-    {% endif %}
   </article>
 </div>
