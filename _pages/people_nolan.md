@@ -35,7 +35,7 @@ profiles_postdoc:
     #content: people/nolan/harry.md
     image_circular: false
     name: Jack Armstrong
-    email: J.T.Armstrong-1@sms.ed.ac.uk
+    email: j.t.armstrong-1@sms.ed.ac.uk
   - align: left
     image: people/junji.jpg
     #content: people/nolan/harry.md
@@ -71,7 +71,7 @@ profiles_phd:
     website: www.wolfdewulf.eu
     email: wolf.de.wulf@ed.ac.uk
     more_info: >
-      Centre for Doctoral Training in Biomedical AI
+      CDT in Biomedical AI
   - align: left
     image: people/fill.png
     image_circular: false
