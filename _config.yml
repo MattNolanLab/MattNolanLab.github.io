@@ -2,13 +2,13 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: "Nolan & Sürmeli Lab" # the website title (if blank, full name will be used instead)
+title: "Nolan & Sürmeli Labs" # the website title (if blank, full name will be used instead)
 first_name: Nolan
 middle_name: "&"
 last_name: Sürmeli
 email: matt.nolan@ed.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  The Nolan & Surmelli Lab website.
+  The Nolan & Sürmeli Labs website.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧠 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
