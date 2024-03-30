@@ -4,7 +4,7 @@ title: Spatial Memory
 importance: 1
 category: work
 related_publications: true
-thumbnail: assets/img/grid_cell.svg
+img: assets/img/grid_cell.svg
 ---
 
 ## The Neural Map
@@ -61,8 +61,6 @@ How do we do *that?*
   are primarily found in the postsubiculum, and provide directional information by preferentially firing in specific directions. A population of head direction cells can encode which direction you are facing in your spatial map.
 
   These cells potentially have uses outside of encoding physical space - their coding mechanism may be used for more general problem sets, such as cognitive mapping. Cognitive mapping refers to swapping out the three-dimensional world we interact with for a different, continuous dimension that represents an abstract concept. The same way we might encode the map of our room, we might use the hexagonal-firing properties of grid cells to represent, for example, conceptual spaces, such as hierarchically organizing ideas within our brain, or recording temporal sequences of events.
-
----
 
 <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser-arcade-physics.min.js"></script>
 <script  type="module" src="/kaja_game/js/main.js"></script>
