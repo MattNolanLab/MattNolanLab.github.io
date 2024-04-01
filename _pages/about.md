@@ -17,6 +17,6 @@ Our research follows four themes:
 
 **Circuit computations.** We are using high density neural recordings and neural network models to investigate how entorhinal cortex circuits implement computations important for spatial memory.
 
-**Technology development.** With collaborators in the [Institute for Integrated and Nano Systems](https://www.eng.ed.ac.uk/research/institutes/imns/about) we are developing kilohertz frame rate cameras for imaging neural activity, and with collaborators in the [School of informatics](https://web.inf.ed.ac.uk/anc) and the [Centre for Statistics](https://centreforstatistics.maths.ed.ac.uk/) we are developing new tools for analysing the organisation and activation of neural circuits.
+**Technology development.** With collaborators in the [Institute for Integrated and Nano Systems](https://www.eng.ed.ac.uk/research/institutes/imns/about) we are developing kilohertz frame rate cameras for imaging neural activity, and with collaborators in the [School of Informatics](https://web.inf.ed.ac.uk/anc) and the [Centre for Statistics](https://centreforstatistics.maths.ed.ac.uk/) we are developing new tools for analysing the organisation and activation of neural circuits.
 
 **Circuit disorders.** Many disorders of the brain appear to result from circuit level deficits. We believe that understanding the fundamental principles for neural circuit computation will be essential for understanding and treating disorders. We are addressing this by focusing on models of autism spectrum disorders and Alzheimer's disease.
