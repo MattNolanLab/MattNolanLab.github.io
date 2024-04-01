@@ -45,8 +45,6 @@ rss_icon: false
 navbar_fixed: false
 footer_fixed: false
 banner: assets/img/banner.jpg # path to the banner image
-banner_title_left: "Nolan &<br>Sürmeli<br>labs"
-banner_title_right: ""
 
 # Dimensions
 max_width: 1000px
