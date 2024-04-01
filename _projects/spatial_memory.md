@@ -4,7 +4,7 @@ title: Spatial Memory
 importance: 1
 category: work
 related_publications: true
-img: assets/img/grid_cell.svg
+img: assets/img/grid_cell.png
 ---
 
 ## The Neural Map
