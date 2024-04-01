@@ -116,22 +116,19 @@
       </div>
     </progress>
   {% endif %}
-  <script>
-window.addEventListener('resize', resizeFont);
+    <script>
+    window.addEventListener('resize', resizeFont);
+    function resizeFont() {
+      var parentWidth = document.querySelector('.container').offsetWidth;
+      var fontSize = parentWidth * 0.05; // Adjust the multiplier as needed
+      var textElements = document.querySelectorAll('.banner-text');
 
-function resizeFont() {
-  var parentWidth = document.querySelector('.container').offsetWidth;
-  var fontSize = parentWidth * 0.05; // Adjust the multiplier as needed
-  var textElements = document.querySelectorAll('.banner-text');
-
-  textElements.forEach(function(element) {
-    element.style.fontSize = fontSize + 'px';
-  });
-}
-
-// Call resizeFont on page load
-window.onload=function() {
-    resizeFont();
-}
-</script>
+      textElements.forEach(function(element) {
+        element.style.fontSize = fontSize + 'px';
+      });
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      resizeFont();
+    });
+    </script>
 </header>
