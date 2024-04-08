@@ -1,13 +1,23 @@
 
 import bibtexparser
+import requests
 from bibtexparser.bwriter import BibTexWriter
+
+
+def get_publication_date(doi):
+    url = f"https://api.crossref.org/works/{doi}"
+    response = requests.get(url)
+    data = response.json()
+    print(data["message"])
+    quit()
+    return data['message']['published']['date-parts'][0]
 
 
 def add_field_if_author_in_entry(bibtex_path, pis):
     with open(bibtex_path) as bibtex_file:
         bib_database = bibtexparser.load(bibtex_file)
     for entry in bib_database.entries:
-        if 'author' in entry:
+        if 'abbr' not in entry and 'author' in entry:
             entry["abbr"] = "<br>x<br>".join(
                 [pi_label for pi, pi_label in pis.items() if pi in entry['author']])
 
@@ -17,12 +27,37 @@ def add_field_if_author_in_entry(bibtex_path, pis):
             else:
                 entry['website'] = f"https://doi.org/{entry['doi']}"
 
-    writer = BibTexWriter()
-    writer.contents = ['entries']
-    writer.indent = '    '
+        pub_date = get_publication_date(
+            entry["doi"].replace("https://doi.org/", ""))
+        entry["year"] = str(pub_date[0])
+        if len(pub_date) > 1:
+            entry["month"] = str(pub_date[1])
 
-    with open(bibtex_path, 'w') as bibtex_file:
-        bibtexparser.dump(bib_database, bibtex_file)
+    class CustomBibTexWriter(BibTexWriter):
+        def write(self, bib_database):
+            """Write the `BibDatabase` object as a string in the BibTeX file format."""
+            bibtex = ''
+            for entry in bib_database.entries:
+                bibtex += self._entry_to_bibtex(entry)
+            return bibtex
+
+    # Sort the entries by date
+    sorted_entries = sorted(
+        bib_database.entries,
+        key=lambda entry: (
+            entry['year'], entry["month"]),
+        reverse=True
+    )
+
+    # Create a new BibDatabase object with the sorted entries
+    from bibtexparser.bibdatabase import BibDatabase
+    sorted_bib_database = BibDatabase()
+    sorted_bib_database.entries = sorted_entries
+
+    # Use the custom writer
+    writer = CustomBibTexWriter()
+    with open("test.bib", 'w') as bibtex_file:
+        bibtex_file.write(writer.write(sorted_bib_database))
 
 
 # Usage
