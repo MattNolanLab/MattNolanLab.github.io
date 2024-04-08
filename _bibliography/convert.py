@@ -8,8 +8,6 @@ def get_publication_date(doi):
     url = f"https://api.crossref.org/works/{doi}"
     response = requests.get(url)
     data = response.json()
-    print(data["message"])
-    quit()
     return data['message']['published']['date-parts'][0]
 
 
@@ -27,6 +25,12 @@ def add_field_if_author_in_entry(bibtex_path, pis):
             else:
                 entry['website'] = f"https://doi.org/{entry['doi']}"
 
+        if 'journal' in entry and entry['journal'].isupper():
+            entry['journal'] = entry['journal'].title()
+
+        if 'type' in entry:
+            entry.pop('type')
+
         pub_date = get_publication_date(
             entry["doi"].replace("https://doi.org/", ""))
         entry["year"] = str(pub_date[0])
@@ -41,11 +45,13 @@ def add_field_if_author_in_entry(bibtex_path, pis):
                 bibtex += self._entry_to_bibtex(entry)
             return bibtex
 
+    from datetime import datetime
+
     # Sort the entries by date
     sorted_entries = sorted(
         bib_database.entries,
-        key=lambda entry: (
-            entry['year'], entry["month"]),
+        key=lambda entry: datetime.strptime(
+            entry['year'] + ' ' + entry['month'], '%Y %m'),
         reverse=True
     )
 
@@ -56,7 +62,7 @@ def add_field_if_author_in_entry(bibtex_path, pis):
 
     # Use the custom writer
     writer = CustomBibTexWriter()
-    with open("test.bib", 'w') as bibtex_file:
+    with open("papers.bib", 'w') as bibtex_file:
         bibtex_file.write(writer.write(sorted_bib_database))
 
 
