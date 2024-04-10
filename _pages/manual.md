@@ -8,11 +8,11 @@ nav_order: 3
 
 This document is inspired by Mariam Aly’s excellent [article](https://www.nature.com/articles/d41586-018-06167-w). This page contains brief information about the lab [goals](#goals), [expectations and responsibilities](#er) and [publication policies](#pub). An expanded version of this document and additional practical information about mailing lists, calendars, contact numbers, computing resources, animal management and experimental protocols is on our internal [wiki](https://www.wiki.ed.ac.uk/pages/viewpage.action?pageId=376674941).
 
-### **Goals** {#goals}
+### Goals {#goals}
 We aim to do the best science we can with the resources available to us. We are committed to supporting creative and rigorous science that aims to address important questions, and to making the process enjoyable and rewarding for everyone involved. We expect everyone in our labs to share this commitment.
 
 
-### **Expectations and responsibilities** {#er}
+### Expectations and responsibilities {#er}
 With help from current and previous lab members we’ve put together below principles and general expectations for everyone, for ourselves, for postdocs and PhD students, for lab staff and for undergraduates. An expanded version of this document is available on the [wiki](https://www.wiki.ed.ac.uk/pages/viewpage.action?pageId=376674941). 
 
 ##### *Everyone*
@@ -29,13 +29,13 @@ We strongly encourage you to take advantage of your time in the lab to learn fro
 
 
 
-### **Publication policies** {#pub}
+### Publication policies {#pub}
 
 ##### *Preprints and journals*
 We aim to share all manuscripts as preprints before submitting to a journal. Which journals to submit to is a joint decision between first and lead author(s). Our preference is to submit to non-profit journals with a strong commitment to open science (e.g. eLife). We recognise that scientific job and funding evaluation is far from perfect and will submit elsewhere if the first author(s) prefer.
 
 
-##### *Data and code•
+##### *Data and code*
 We aim to share all data and code, see [data & code](/data-and-code).
 
 ##### *Authorship*
