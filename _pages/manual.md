@@ -15,10 +15,10 @@ We aim to do the best science we can with the resources available to us. We are 
 ### Expectations and responsibilities {#er}
 With help from current and previous lab members we’ve put together below principles and general expectations for everyone, for ourselves, for postdocs and PhD students, for lab staff and for undergraduates. An expanded version of this document is available on the [wiki](https://www.wiki.ed.ac.uk/pages/viewpage.action?pageId=376674941). 
 
-#### Everyone
+##### Everyone
 We’re lucky to be surrounded by talented colleagues from diverse backgrounds. Our expectation is that everyone will contribute to a respectful, open, positive and productive work environment.
 
-#### Gülşen and Matt
+##### *Gülşen and Matt*
 We aim to ensure our labs carry out rigorous science that addresses important research questions, to support students and staff in our labs in their personal and career development, and to provide a respectful and supportive environment for everyone in our labs. We encourage everyone to maintain a healthy work-life balance, take holidays and pay attention to long-term career development as well as immediately project goals.
 
 #### Postdocs, research staff and PhD students
@@ -29,7 +29,7 @@ We strongly encourage you to take advantage of your time in the lab to learn fro
 
 
 
-### Publication policies {#pub}
+### **Publication policies** {#pub}
 
 #### Preprints and journals
 We aim to share all manuscripts as preprints before submitting to a journal. Which journals to submit to is a joint decision between first and lead author(s). Our preference is to submit to non-profit journals with a strong commitment to open science (e.g. eLife). We recognise that scientific job and funding evaluation is far from perfect and will submit elsewhere if the first author prefers.
