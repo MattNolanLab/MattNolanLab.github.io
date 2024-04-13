@@ -1,6 +1,6 @@
 ---
 layout: page
-title: research
+title: Research
 permalink: /research/
 description: We aim to understand the cellular and molecular basis for computations that underlie episodic memory.
 nav: true

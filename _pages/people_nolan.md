@@ -1,9 +1,9 @@
 ---
 layout: profiles
 permalink: /nolan-lab/
-title: Nolan lab
+title: Nolan Lab
 nav: true
-nav_order: 6
+nav_order: 5
 
 profiles_pi:
   - align: left
@@ -26,19 +26,17 @@ profiles_postdoc:
     email: brianna.vandrey@ed.ac.uk
   - align: left
     image: people/harry.jpg
-    #content: people/nolan/harry.md
+    content: people/nolan/harry.md
     image_circular: false
     name: Harry Clark
     email: hclark3@ed.ac.uk
   - align: left
     image: people/fill.png
-    #content: people/nolan/harry.md
     image_circular: false
     name: Jack Armstrong
     email: j.t.armstrong-1@sms.ed.ac.uk
   - align: left
     image: people/junji.jpg
-    #content: people/nolan/harry.md
     image_circular: false
     name: Junji Hua
     email: jhua2@ed.ac.uk
@@ -46,7 +44,7 @@ profiles_postdoc:
 profiles_soft:
   - align: left
     image: people/chris.jpeg
-    #content: people/nolan/chris.md
+    content: people/nolan/chris.md
     image_circular: false
     name: Chris Halcrow
     email: chalcrow@ed.ac.uk
@@ -65,7 +63,7 @@ profiles_phd:
     website: kurtulusbulus.github.io
   - align: left
     image: people/wolf.jpg
-    #content: people/nolan/wolf.md
+    content: people/nolan/wolf.md
     image_circular: false
     name: Wolf De Wulf
     website: www.wolfdewulf.eu
@@ -81,10 +79,44 @@ profiles_phd:
       EASTBIO Doctoral Program
   - align: left
     image: people/zita.png
-    #content: people/nolan/zita.md
+    content: people/nolan/zita.md
     image_circular: false
     name: Zita Francsics
     email: z.francsics@sms.ed.ac.uk
     more_info: >
       Simons Initiative for the Developing Brain
+
+collaborators:
+  - align: left
+    name: Istvan Gyongy
+    more_info: >
+      School of Engineering, University of Edinburgh
+  - align: left
+    name: Matthias Hennig
+    more_info: >
+      School of Informatics, University of Edinburgh
+  - align: left
+    name: Srinjoy Mitra
+    more_info: >
+      School of Engineering, University of Edinburgh
+  - align: left
+    name: Robert Henderson
+    more_info: >
+      School of Engineering, University of Edinburgh
+  - align: left
+    name: Benjamin Grewe
+    more_info: >
+      University of Zurich
+  - align: left
+    name: Ioannis Papastathopoulos
+    more_info: >
+      School of Mathematics, University of Edinburgh
+  - align: left
+    name: Ian Duguid
+    more_info: >
+      Centre for Discovery Brain Sciences, University of Edinburgh
+  - align: left
+    name: Emma Wood
+    more_info: >
+      Centre for Discovery Brain Sciences, University of Edinburgh
 ---

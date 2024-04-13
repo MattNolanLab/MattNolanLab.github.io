@@ -1,9 +1,9 @@
 ---
 layout: profiles
 permalink: /surmeli-lab/
-title: Sürmeli lab
+title: Sürmeli Lab
 nav: true
-nav_order: 7
+nav_order: 6
 
 profiles_pi:
   - align: left
@@ -61,4 +61,10 @@ profiles_phd:
     email: sauyee.tsoi@ed.ac.uk
     more_info: >
       EASTBIO Doctoral Program
+
+collaborators:
+  - align: left
+    name: Emma Wood
+    more_info: >
+      Centre for Discovery Brain Sciences, University of Edinburgh
 ---

@@ -1,9 +1,9 @@
 ---
 layout: page
-permalink: /lab-manual/
-title: lab manual
+permalink: /lab-values/
+title: Lab Values
 nav: true
-nav_order: 3
+nav_order: 7
 ---
 
 This document is inspired by Mariam Aly’s excellent [article](https://www.nature.com/articles/d41586-018-06167-w) about lab manuals and by her lab’s [manual](https://www.alylab.org/). This page contains information about the lab [goals](#goals), [expectations and responsibilities](#er) and [publication policies](#pub). Information about mailing lists, calendars, contact numbers, computing resources, animal management and experimental protocols is on our internal [wiki](https://www.wiki.ed.ac.uk/pages/viewpage.action?pageId=376674941).

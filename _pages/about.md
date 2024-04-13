@@ -1,6 +1,6 @@
 ---
 layout: main
-title: about
+title: About
 permalink: /
 
 news: true # includes a list of news items

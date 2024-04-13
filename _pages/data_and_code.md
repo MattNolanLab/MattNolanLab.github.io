@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /data-and-code/
-title: data & code
+title: Data & Code
 nav: true
-nav_order: 5
+nav_order: 4
 ---
 
 We aim to always publish reproducible code via [GitHub](https://github.com/MattNolanLab).  
