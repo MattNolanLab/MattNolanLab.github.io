@@ -35,11 +35,6 @@ profiles_postdoc:
     image_circular: false
     name: Jack Armstrong
     email: j.t.armstrong-1@sms.ed.ac.uk
-  - align: left
-    image: people/junji.jpg
-    image_circular: false
-    name: Junji Hua
-    email: jhua2@ed.ac.uk
 
 profiles_soft:
   - align: left
@@ -55,6 +50,11 @@ profiles_phd:
     image_circular: false
     name: Ian Hawes
     email: ian.hawes@ed.ac.uk
+  - align: left
+    image: people/junji.jpg
+    image_circular: false
+    name: Junji Hua
+    email: jhua2@ed.ac.uk
   - align: left
     image: people/kurtulus.jpg
     image_circular: false

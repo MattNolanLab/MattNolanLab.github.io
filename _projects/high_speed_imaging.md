@@ -25,7 +25,6 @@ We are developing and validating neuroscience applications of SPAD sensor techno
 
 #### Progress
 
-We published the first proof-of-principle demonstration that SPAD-based cameras can detect neuronal activity reported with GEVIs (Tian et al. 2022). This required introducing viruses encoding GEVIs into a mouse brain, generate known activity patterns in neurons expressing the GEVIs and using SPAD cameras to image the signal from the GEVIs (see figure).
+We published the first proof-of-principle demonstration that SPAD-based cameras can detect neuronal activity reported with GEVIs {%cite WOS:000850307700001 %}. This required introducing viruses encoding GEVIs into a mouse brain, generate known activity patterns in neurons expressing the GEVIs and using SPAD cameras to image the signal from the GEVIs (see figure).
 
 We are now evaluating new generation SPAD devices and working to miniaturise SPAD cameras for imaging in freely moving animals.
-
