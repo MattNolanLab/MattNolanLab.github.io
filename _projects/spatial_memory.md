@@ -1,14 +1,13 @@
 ---
 layout: page
 title: Spatial Memory
+author: by Kaja Kubickova
 importance: 1
-category: work
 related_publications: true
 img: assets/img/kaja_spatial_memory.png
 ---
 
 ## The Neural Map
-
 Our sense of navigation is not something we tend to consider too deeply in our day-to-day lives. Nevertheless, we somehow have a subconscious knowledge of were we are in the world and where we are going. We use it everywhere - to walk home, to go to the grocery store, to walk to the bathroom in the middle of the night. 
 
 How we navigate is largely dependent on what information is available to us. The brain is complex and uses a variety of strategies to determine our position, relative to other landmarks and to start or goal locations. Among those is beaconing, a strategy where we use a distant object to navigate to - say, “Hey, there’s a neon sign here saying ‘Pub’” - that’s probably the entrance to the pub. But what if you don’t have those clues? 

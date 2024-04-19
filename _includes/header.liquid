@@ -8,7 +8,6 @@
                 <img class="carousel-image" src="/assets/img/banners/banner2.jpg" alt="Banner Image">
                 <img class="carousel-image" src="/assets/img/banners/banner3.jpg" alt="Banner Image">
                 <img class="carousel-image" src="/assets/img/banners/banner4.jpg" alt="Banner Image">
-                <img class="carousel-image" src="/assets/img/banners/banner1.jpg" alt="Banner Image">
             </div>
             </div>
         </div>
@@ -131,25 +130,24 @@
 
 .carousel {
     width: 100%; /* 1 image, 100% of container width */
-    height: 500%; /* 5 images, each 100% of container height */
-    animation: carousel 100s infinite linear;
+    height: 400%; /* 4 images, each 100% of container height */
+    animation: carousel 100s infinite linear alternate;
 }
 
 .carousel-image {
     float: left; /* add this line */
     width: 100%; /* each image takes up 100% of the carousel width */
-    height: 20%; /* each image takes up 20% of the carousel height */
+    height: 25%; /* each image takes up 25% of the carousel height */
 }
 
 @keyframes carousel {
-    0%, 19% { transform: translateY(0); }
-    20%, 39% { transform: translateY(-20%); }
-    40%, 59% { transform: translateY(-40%); }
-    60%, 79% { transform: translateY(-60%); }
-    80%, 99% { transform: translateY(-80%); }
-    100%, 119% { transform: translateY(-100%); }
-    120%, 139% { transform: translateY(-120%); } /* back to the first image */
-    140%, 150% { transform: translateY(-140%); } /* pause at the first image */
+    0%, 20% { transform: translateY(0); }
+    22%, 40% { transform: translateY(-25%); }
+    42%, 60% { transform: translateY(-50%); }
+    62%, 80% { transform: translateY(-75%); }
+    82%, 85% { transform: translateY(-50%); }
+    87%, 90% { transform: translateY(-25%); }
+    92%, 100% { transform: translateY(0); }
 }
 </style>
 </header>

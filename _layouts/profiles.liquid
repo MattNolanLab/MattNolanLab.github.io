@@ -66,21 +66,23 @@ layout: page
               {% if profile.email %}
                   <div class="more-info"><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></div>
               {% endif %}
-              <button class="more-info-btn">ABS</button>
-              <div class="more-info-content hidden">
-                {% if profile.website %}
-                    <div class="more-info" style="padding-left: 10px;"> 
-                      <p><a href="http://{{ profile.website }}">{{ profile.website }}</a></p>
-                    </div>
-                {% endif %}
-                {% if profile.more_info %}
-                    <div  style="padding-left: 10px;">{{ profile.more_info }}</div>
-                {% endif %}
-                {% if profile.content %}
-                    {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-                    {{ profile_content | markdownify }}
-                {% endif %}
-              </div>
+              {% if profile.website or profile.more_info or profile.content %}
+                <button class="more-info-btn">ABS</button>
+                <div class="more-info-content hidden">
+                  {% if profile.website %}
+                      <div class="more-info" style="padding-left: 10px;"> 
+                        <p><a href="http://{{ profile.website }}">{{ profile.website }}</a></p>
+                      </div>
+                  {% endif %}
+                  {% if profile.more_info %}
+                      <div  style="padding-left: 10px;">{{ profile.more_info }}</div>
+                  {% endif %}
+                  {% if profile.content %}
+                      {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                      {{ profile_content | markdownify }}
+                  {% endif %}
+                </div>
+              {% endif %}
             {% endif %}
             <br>
           </div>
@@ -111,21 +113,23 @@ layout: page
               {% if profile.email %}
                   <div class="more-info"><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></div>
               {% endif %}
-              <button class="more-info-btn">ABS</button>
-              <div class="more-info-content hidden">
-                {% if profile.website %}
-                    <div class="more-info" style="padding-left: 10px;"> 
-                      <p><a href="http://{{ profile.website }}">{{ profile.website }}</a></p>
-                    </div>
-                {% endif %}
-                {% if profile.more_info %}
-                    <div  style="padding-left: 10px;">{{ profile.more_info }}</div>
-                {% endif %}
-                {% if profile.content %}
-                    {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-                    {{ profile_content | markdownify }}
-                {% endif %}
-              </div>
+              {% if profile.website or profile.more_info or profile.content %}
+                <button class="more-info-btn">ABS</button>
+                <div class="more-info-content hidden">
+                  {% if profile.website %}
+                      <div class="more-info" style="padding-left: 10px;"> 
+                        <p><a href="http://{{ profile.website }}">{{ profile.website }}</a></p>
+                      </div>
+                  {% endif %}
+                  {% if profile.more_info %}
+                      <div  style="padding-left: 10px;">{{ profile.more_info }}</div>
+                  {% endif %}
+                  {% if profile.content %}
+                      {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                      {{ profile_content | markdownify }}
+                  {% endif %}
+                </div>
+              {% endif %}
             {% endif %}
             <br>
           </div>
@@ -156,21 +160,23 @@ layout: page
               {% if profile.email %}
                   <div class="more-info"><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></div>
               {% endif %}
-              <button class="more-info-btn">ABS</button>
-              <div class="more-info-content hidden">
-                {% if profile.website %}
-                    <div class="more-info" style="padding-left: 10px;"> 
-                      <p><a href="http://{{ profile.website }}">{{ profile.website }}</a></p>
-                    </div>
-                {% endif %}
-                {% if profile.more_info %}
-                    <div  style="padding-left: 10px;">{{ profile.more_info }}</div>
-                {% endif %}
-                {% if profile.content %}
-                    {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-                    {{ profile_content | markdownify }}
-                {% endif %}
-              </div>
+              {% if profile.website or profile.more_info or profile.content %}
+                <button class="more-info-btn">ABS</button>
+                <div class="more-info-content hidden">
+                  {% if profile.website %}
+                      <div class="more-info" style="padding-left: 10px;"> 
+                        <p><a href="http://{{ profile.website }}">{{ profile.website }}</a></p>
+                      </div>
+                  {% endif %}
+                  {% if profile.more_info %}
+                      <div  style="padding-left: 10px;">{{ profile.more_info }}</div>
+                  {% endif %}
+                  {% if profile.content %}
+                      {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                      {{ profile_content | markdownify }}
+                  {% endif %}
+                </div>
+              {% endif %}
             {% endif %}
             <br>
           </div>
@@ -201,12 +207,23 @@ layout: page
               {% if profile.email %}
                   <div class="more-info"><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></div>
               {% endif %}
-              {% if profile.website %}
-                  <p><a href="http://{{ profile.website }}">{{ profile.website }}</a></p>
+              {% if profile.website or profile.more_info or profile.content %}
+                <button class="more-info-btn">ABS</button>
+                <div class="more-info-content hidden">
+                  {% if profile.website %}
+                      <div class="more-info" style="padding-left: 10px;"> 
+                        <p><a href="http://{{ profile.website }}">{{ profile.website }}</a></p>
+                      </div>
+                  {% endif %}
+                  {% if profile.more_info %}
+                      <div  style="padding-left: 10px;">{{ profile.more_info }}</div>
+                  {% endif %}
+                  {% if profile.content %}
+                      {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                      {{ profile_content | markdownify }}
+                  {% endif %}
+                </div>
               {% endif %}
-              <div class="abstract hidden">
-                  <p>{{ profile.more_info }}</p>
-              </div>
             {% endif %}
             <br>
           </div>
